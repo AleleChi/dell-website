@@ -22,10 +22,11 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap  bg-green-950 ms:m-8">
+        <div className="-mx-4 py-8 flex flex-wrap  bg-green-500 ms:m-8">
           <ServiceCard
-            title="Refreshing Design"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Integrity"
+            details="Upholding honesty and moral principles in every action we
+            take."
             icon={
               <svg
                 width="36"
@@ -42,8 +43,9 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Based on Tailwind CSS"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Respect for Others"
+            details="Valuing diversity and treating everyone with dignity and
+            consideration."
             icon={
               <svg
                 width="36"
@@ -62,8 +64,8 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="100+ Components"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Compassion"
+            details="Embracing empathy to foster kindness and understanding in all interactions."
             icon={
               <svg
                 width="36"
@@ -92,8 +94,9 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Speed Optimized"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Hard Work"
+            details="Committing to diligent effort and perseverance in all
+            endeavors."
             icon={
               <svg
                 width="36"
@@ -114,8 +117,9 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Fully Customizable"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Cooperation"
+            details=" Working together harmoniously to achieve common goals and
+            objectives."
             icon={
               <svg
                 width="36"
@@ -132,8 +136,8 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Regular Updates"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            title="Responsibility"
+            details="Nurturing accountability to instill a sense of duty and ownership."
             icon={
               <svg
                 width="36"
@@ -164,7 +168,7 @@ export default Service;
 const ServiceCard = ({ icon, title, details }) => {
   return (
     <>
-      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3 mx-3">
         <div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
           <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
             {icon}

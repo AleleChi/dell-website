@@ -101,7 +101,7 @@ function Hero() {
         <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
             <h1 className="text-sm text-green-600 font-medium">
-              Over 200 successful deals
+              Over 3000+ Alumni and High Flying Students
             </h1>
             <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
               Dell Int'l, a Citadel of Academic Excellence
@@ -135,7 +135,7 @@ function Hero() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-  <div className="-mx-2 flex flex-wrap sm:-mx-4">
+  <div className="-mx-2 flex flex-wrap sm:-mx-4 verflow-hidden rounded-md group-hover:opacity-75">
     <div className="w-1/2 px-2 sm:px-4">
       <div className="mb-4 h-[256px] sm:mb-8 sm:h-[442px] lg:h-[332px] xl:h-[442px]">
         <img

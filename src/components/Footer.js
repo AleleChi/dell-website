@@ -4,16 +4,16 @@ import logo from './assests/logo.png'
 const Footer = () => {
     return (
         <>
-       <footer className="relative z-10 bg-green-900 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+<footer className="relative z-10 bg-green-900 pb-10 pt-20  dark:bg-dark lg:pb-20 lg:pt-[120px]">
   <div className="container mx-auto">
     <div className="-mx-4 flex flex-wrap">
-      <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
+      <div className="w-full px-4 sm:w-2/3 ml-6 lg:w-2/12">
         <div className="mb-10 w-full">
           <a href="javascript:void(0)" className="mb-6 inline-block max-w-[160px]">
             <img src={logo} alt="logo" className="max-w-full dark:hidden" />
             <img src={logo} alt="logo" className="hidden max-w-full dark:block" />
           </a>
-          <p className="dark:text-white mb-7 text-base text-body-color">
+          <p className="dark:text-white mb-7  text-base text-body-color">
             A citadel for knowledge and experience where every child is geiven a chance for expression
           </p>
           <div className="-mx-3 flex items-center">
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+      <div className="w-full px-4 sm:w-1/2 ml-4 lg:w-3/12">
         <div className="mb-10 w-full">
           <h4 className="mb-9 text-lg font-semibold text-white dark:text-white">
            Quick Links
@@ -76,7 +76,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+      <div className="w-full px-4 sm:w-1/2 ml-4 lg:w-3/12">
         <div className="mb-10 w-full">
           <h4 className="mb-9 text-lg font-semibold text-white dark:text-white">
             Portal Access
@@ -102,7 +102,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+      <div className="w-full px-4 sm:w-1/2 ml-4 lg:w-3/12">
         <div className="mb-10 w-full">
           <h4 className="mb-9 text-lg font-semibold text-white dark:text-white">
             Subscribe To Newsletter
