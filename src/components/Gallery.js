@@ -1,14 +1,16 @@
-import React, {useState} from "react"
-import Gal1 from './assests/director-dell.png'
-import Gal2 from './assests/dell26.jpeg'
-import Gal3 from './assests/dell39.jpeg'
-import Gal4 from './assests/dell42.jpeg'
-import Gal5 from './assests/dell43.jpeg'
-import Gal6 from './assests/dell14.jpg'
-import Gal7 from './assests/dell-secondary.jpg'
+import React from "react";
+import { Element } from "react-scroll";
+import Gal1 from "./assests/director-dell.png";
+import Gal2 from "./assests/dell26.jpeg";
+import Gal3 from "./assests/dell39.jpeg";
+import Gal4 from "./assests/dell42.jpeg";
+import Gal5 from "./assests/dell43.jpeg";
+import Gal6 from "./assests/dell14.jpg";
+import Gal7 from "./assests/dell-secondary.jpg";
 
-function  Gallery () {
-    return (
+function Gallery() {
+  return (
+    <Element name="event">
       <div className="relative overflow-hidden bg-white">
         <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -17,12 +19,12 @@ function  Gallery () {
                 Explore Some of Our Moments
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                These are some of the lively moments captured on camera, your child too can become one of us...
+                These are some of the lively moments captured on camera, your
+                child too can become one of us...
               </p>
             </div>
             <div>
               <div className="mt-10">
-                {/* Decorative image grid */}
                 <div
                   aria-hidden="true"
                   className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
@@ -87,7 +89,7 @@ function  Gallery () {
                     </div>
                   </div>
                 </div>
-  
+
                 <a
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-green-600 px-8 py-3 text-center font-medium text-white hover:bg-green-700"
@@ -99,7 +101,8 @@ function  Gallery () {
           </div>
         </div>
       </div>
-    )
-  }
-  
-  export default Gallery;
+    </Element>
+  );
+}
+
+export default Gallery;

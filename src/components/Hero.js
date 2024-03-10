@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "./assests/logo.png";
 import landingpage1 from "./assests/dell14.jpg";
-import landingpage2 from './assests/dell2.jpeg';
-import landingpage3 from './assests/dellk.jpg'
+import landingpage2 from "./assests/dell2.jpeg";
+import landingpage3 from "./assests/dellk.jpg";
 
 const SingleImage = ({ href, imgSrc, Alt }) => {
   return (
@@ -22,11 +23,13 @@ function Hero() {
 
   // Replace "your-path-here" with the appropriate paths
   const navigation = [
-    { title: "Home", path: "/home" },
-    { title: "About", path: "/about" },
-    { title: "Portal", path: "/portal" },
-    { title: "Event", path: "/event" },
-    { title: "Gallery", path: "/gallery" },
+    { title: "Home", path: "home" },
+    { title: "About", path: "about" },
+    { title: "Core Values", path: "values" },
+    { title: "Event", path: "event" },
+    { title: "Gallery", path: "gallery" },
+    { title: "Portfolio", path: "portfolio" },
+    { title: "Contact", path: "contact" },
   ];
 
   return (
@@ -82,8 +85,21 @@ function Hero() {
         >
           <div className="items-center space-y-5 md:flex md:space-x-6 md:space-y-0 md:ml-12">
             {navigation.map((item, idx) => (
-              <li className="text-gray-500 hover:text-green-600" key={idx}>
-                <a href={item.path}>{item.title}</a>
+              <li
+                className="text-gray-500 hover:text-green-600 cursor-pointer"
+                key={idx}
+              >
+                {/* Use Link from react-scroll instead of a regular anchor tag */}
+                <Link
+                  activeClass="active"
+                  to={item.path}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer" // Add cursor-pointer class here
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
           </div>
@@ -135,38 +151,36 @@ function Hero() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-  <div className="-mx-2 flex flex-wrap sm:-mx-4 verflow-hidden rounded-md group-hover:opacity-75">
-    <div className="w-1/2 px-2 sm:px-4">
-      <div className="mb-4 h-[256px] sm:mb-8 sm:h-[442px] lg:h-[332px] xl:h-[442px]">
-        <img
-          src={landingpage1}
-          alt="hero"
-          className="h-full w-full object-cover object-center"
-        />
-      </div>
-    </div>
-    <div className="w-1/2 px-2 sm:px-4">
-      <div className="mb-4 h-[120px] sm:mb-8 sm:h-[205px] lg:h-[150px] xl:h-[205px]">
-        <img
-          src={landingpage2}
-          alt="hero"
-          className="h-full w-full object-cover object-center"
-        />
-      </div>
-      <div className="mb-4 h-[120px] sm:mb-8 sm:h-[205px] lg:h-[150px] xl:h-[205px]">
-        <img
-          src={landingpage3}
-          alt="hero"
-          className="h-full w-full object-cover object-center"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
+            <div className="-mx-2 flex flex-wrap sm:-mx-4 overflow-hidden rounded-md group-hover:opacity-75">
+              <div className="w-1/2 px-2 sm:px-4">
+                <div className="mb-4 h-[256px] sm:mb-8 sm:h-[442px] lg:h-[332px] xl:h-[442px]">
+                  <img
+                    src={landingpage1}
+                    alt="hero"
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2 px-2 sm:px-4">
+                <div className="mb-4 h-[120px] sm:mb-8 sm:h-[205px] lg:h-[150px] xl:h-[205px]">
+                  <img
+                    src={landingpage2}
+                    alt="hero"
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-4 h-[120px] sm:mb-8 sm:h-[205px] lg:h-[150px] xl:h-[205px]">
+                  <img
+                    src={landingpage3}
+                    alt="hero"
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      
     </>
   );
 }
