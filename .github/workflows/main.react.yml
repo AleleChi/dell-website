@@ -19,11 +19,13 @@ jobs:
       with:
         node-version: '20.10.0'
       
-    - name: 🔨 Build Project
-      run: |
-        npm install
-        npm install -D tailwindcss
-        npm run build
+    - name: 🔨 install dependencies
+     
+      run:  npm install
+    - name: 🔨 install buildprojects 
+
+      run:  npm run build
+       
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
