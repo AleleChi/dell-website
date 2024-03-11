@@ -160,23 +160,23 @@ const Footer = () => {
                 <ul className="space-y-3">
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="https://dellmodel.vacanstores.com/login" target="_blank"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
-                      Current Portal
+                      Secondary Portal
                     </a>
                   </li>
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="https://dellprimary.vacanstores.com/login" target="_blank"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
-                      Later Portal
+                      Primary Portal
                     </a>
                   </li>
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="https://portal1.dellinternationalschools.com/"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
                       Old Portal
