@@ -86,7 +86,7 @@ function Hero() {
           <div className="items-center space-y-5 md:flex md:space-x-6 md:space-y-0 md:ml-12">
             {navigation.map((item, idx) => (
               <li
-                className="text-gray-500 hover:text-green-600 cursor-pointer"
+                className="text-gray-700 text-xl hover:text-green-600 cursor-pointer"
                 key={idx}
               >
                 {/* Use Link from react-scroll instead of a regular anchor tag */}
@@ -105,10 +105,10 @@ function Hero() {
           </div>
           <li className="order-2 py-5 md:py-0">
             <a
-              href="/get-started"
+              href="https://dellmodel.vacanstores.com/login" target="_blank" rel="noreferrer"
               className="py-2 px-5 rounded-lg font-medium text-white text-center bg-green-600 hover:bg-green-500 active:bg-green-700 duration-150 block md:py-3 md:inline"
             >
-              Portal Access
+             Secondary Portal Access
             </a>
           </li>
         </ul>
@@ -125,15 +125,16 @@ function Hero() {
             <p>Where we believe every child is born intelligent</p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <a
-                href="/get-started"
+                href="https://dellprimary.vacanstores.com/login" target="_blank"
                 className="block py-2 px-4 text-center text-white font-medium bg-green-600 duration-150 hover:bg-green-500 active:bg-green-700 rounded-lg shadow-lg hover:shadow-none"
               >
-                Portal Access
+               Primary Portal Access
               </a>
               <a
-                href="/get-access"
-                className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:text-gray-900"
+                href="https://portal1.dellinternationalschools.com/"
+                className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-green-600 font-medium duration-150 active:text-gray-900"
               >
+                <a href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -146,6 +147,7 @@ function Hero() {
                     clipRule="evenodd"
                   />
                 </svg>
+                </a>
                 Old Portal
               </a>
             </div>
