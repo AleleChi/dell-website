@@ -126,12 +126,15 @@ function Hero() {
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <a
                 href="https://dellprimary.vacanstores.com/login" target="_blank"
+                rel="noreferrer"
                 className="block py-2 px-4 text-center text-white font-medium bg-green-600 duration-150 hover:bg-green-500 active:bg-green-700 rounded-lg shadow-lg hover:shadow-none"
               >
                Primary Portal Access
               </a>
               <a
-                href="https://portal1.dellinternationalschools.com/"
+                href="https://portal1.dellinternationalschools.com/" 
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-green-600 font-medium duration-150 active:text-gray-900"
               >
                 <a href="">

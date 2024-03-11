@@ -1,9 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 import logo from "./assests/logo.png";
-
-
 
 // Replace "your-path-here" with the appropriate paths
 const navigation = [
@@ -160,7 +158,9 @@ const Footer = () => {
                 <ul className="space-y-3">
                   <li>
                     <a
-                      href="https://dellmodel.vacanstores.com/login" target="_blank"
+                      href="https://dellmodel.vacanstores.com/login"
+                      target="_blank"
+                      rel="noreferrer"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
                       Secondary Portal
@@ -168,7 +168,9 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://dellprimary.vacanstores.com/login" target="_blank"
+                      href="https://dellprimary.vacanstores.com/login"
+                      target="_blank"
+                      rel="noreferrer"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
                       Primary Portal
@@ -177,6 +179,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="https://portal1.dellinternationalschools.com/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="dark:text-white inline-block text-base leading-loose text-body-color hover:text-primary"
                     >
                       Old Portal
